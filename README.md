@@ -17,8 +17,8 @@ KnowledgeHub/
 │   ├── REST vs GraphQL Qual é Melhor - MChiodi.pdf
 │
 │── 📁 Desenvolvimento/
-│   ├── Introdução ao Desenvolvimento Moderno de Software.pdf
-│   ├── Protegendo Seus Formulários Dicas Simples Contra Ataques de Hackers.pdf
+│   ├── Introdução ao Desenvolvimento Moderno de Software - MChiodi.pdf
+│   ├── Protegendo Seus Formulários Dicas Simples Contra Ataques de Hackers - MChiodi.pdf
 │
 │── 📁 GitHub/
 │   ├── Comandos básicos do GitHub - MChiodi.pdf
