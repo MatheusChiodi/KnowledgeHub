@@ -6,33 +6,35 @@ export function useGitHubPDFs() {
   useEffect(() => {
     const fetchPDFs = async () => {
       try {
-        const res = await fetch(
-          "https://api.github.com/repos/MatheusChiodi/KnowledgeHub/contents/public/PDFs"
-        );
-        const data = await res.json();
+        const baseUrl =
+          "https://api.github.com/repos/MatheusChiodi/KnowledgeHub/contents/public/PDFs";
+        const folderRes = await fetch(baseUrl);
+        const folderData = await folderRes.json();
 
-        const grouped = {};
+        const validFolders = folderData.filter((item) => item.type === "dir");
 
-        data.forEach((file) => {
-          if (file.name.endsWith(".pdf")) {
-            const [rawCategory, ...nameParts] = file.name.split(" - ");
-            const category = rawCategory.trim();
-            const name = nameParts.join(" - ").replace(".pdf", "").trim();
+        const promises = validFolders.map(async (folder) => {
+          const res = await fetch(`${baseUrl}/${folder.name}`);
+          const files = await res.json();
 
-            if (!grouped[category]) grouped[category] = [];
-            grouped[category].push({ name, url: file.download_url });
-          }
+          const pdfs = files
+            .filter((file) => file.name.endsWith(".pdf"))
+            .map((file) => ({
+              name: file.name.replace(".pdf", "").trim(),
+              url: file.download_url,
+            }));
+
+          return {
+            id: folder.sha.slice(0, 6), // ou use um contador se preferir número sequencial
+            name: folder.name,
+            description: `Arquivos relacionados a ${folder.name}`,
+            icon: "FileText",
+            pdfs,
+          };
         });
 
-        const folderList = Object.entries(grouped).map(([name, pdfs], idx) => ({
-          id: idx + 1,
-          name,
-          description: `Arquivos relacionados a ${name}`,
-          icon: "FileText",
-          pdfs,
-        }));
-
-        setFolders(folderList);
+        const results = await Promise.all(promises);
+        setFolders(results);
       } catch (err) {
         console.error("Erro ao buscar PDFs do GitHub:", err);
       }
