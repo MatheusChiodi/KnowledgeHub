@@ -25,7 +25,7 @@ export function useGitHubPDFs() {
             }));
 
           return {
-            id: folder.sha.slice(0, 6), // ou use um contador se preferir número sequencial
+            id: folder.sha.slice(0, 6), 
             name: folder.name,
             description: `Arquivos relacionados a ${folder.name}`,
             icon: "FileText",
