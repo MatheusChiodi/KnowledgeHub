@@ -7,7 +7,7 @@ export function useGitHubPDFs() {
     const fetchPDFs = async () => {
       try {
         const res = await fetch(
-          "https://api.github.com/repos/MatheusChiodi/knowledgehub/contents/PDFs"
+          "https://api.github.com/repos/MatheusChiodi/KnowledgeHub/contents/public/PDFs"
         );
         const data = await res.json();
 
