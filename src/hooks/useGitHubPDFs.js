@@ -1,4 +1,3 @@
-// src/hooks/useGitHubPDFs.js
 import { useEffect, useState } from "react";
 
 export function useGitHubPDFs() {

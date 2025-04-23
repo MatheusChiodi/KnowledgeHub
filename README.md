@@ -1,86 +1,86 @@
 # KnowledgeHub 📚
 
-Seja bem-vindo ao **KnowledgeHub**, uma biblioteca digital gratuita que centraliza artigos e materiais técnicos em formato PDF, organizados por categorias como **API**, **Desenvolvimento**, **GitHub**, **IA**, **Node.js** e **Python**.
+Welcome to **KnowledgeHub**, a free digital library that centralizes articles and technical materials in PDF format, organized into categories like **API**, **Development**, **GitHub**, **AI**, **Node.js**, and **Python**.
 
-Este repositório tem como objetivo democratizar o acesso ao conhecimento, oferecendo recursos que podem ser acessados e utilizados por qualquer pessoa interessada em tecnologia e programação.
+This repository aims to democratize access to knowledge by offering resources that can be accessed and used by anyone interested in technology and programming.
 
 ---
 
-## 🌐 Acesse o projeto
+## 🌐 Access the project
 
-Você pode acessar o projeto diretamente via GitHub Pages:  
+You can access the project directly via GitHub Pages:  
 🔗 **[https://matheuschiodi.github.io/KnowledgeHub/](https://matheuschiodi.github.io/KnowledgeHub/)**
 
 ---
 
-## ⚙️ Como funciona o projeto
+## ⚙️ How the project works
 
-O site foi desenvolvido em **React.js** utilizando **Vite**, **Tailwind CSS** e **Framer Motion** para animações. Os arquivos PDF são buscados automaticamente direto da pasta `/public/PDFs` deste repositório.
+The site is built with **React.js** using **Vite**, **Tailwind CSS**, and **Framer Motion** for animations. PDF files are automatically fetched from the `/public/PDFs` folder in this repository.
 
-Cada pasta representa uma categoria de conhecimento. O frontend consome a [API pública do GitHub](https://docs.github.com/en/rest/repos/contents) para listar os arquivos de forma dinâmica, sem necessidade de alterar o código toda vez que um novo PDF for adicionado.
+Each folder represents a knowledge category. The frontend consumes the [GitHub public API](https://docs.github.com/en/rest/repos/contents) to dynamically list files, with no need to update the code when a new PDF is added.
 
-**Ou seja:** sempre que você subir um novo PDF no repositório, ele aparecerá automaticamente no site, classificado pela pasta em que foi colocado.
+**In other words:** every time you upload a new PDF to the repository, it will automatically appear on the site, categorized by the folder it was placed in.
 
 ---
 
-## 📁 Como encontrar os arquivos
+## 📁 Where to find the files
 
-Todos os materiais estão organizados dentro da pasta:
+All materials are organized inside the following folder:
 
 ```
 /public/PDFs
 ```
 
-Cada subpasta representa uma categoria, como por exemplo:
+Each subfolder represents a category, such as:
 
 ```
 /public/PDFs/API
-/public/PDFs/Desenvolvimento
+/public/PDFs/Development
 /public/PDFs/GitHub
-/public/PDFs/IA
+/public/PDFs/AI
 /public/PDFs/Nodejs
 /public/PDFs/Python
 ```
 
-No site, os arquivos aparecem agrupados exatamente como no repositório. Exemplo:
+On the site, files are grouped exactly as they are in the repository. For example:
 
-- Um PDF dentro de `/public/PDFs/IA/Guia Prompts IA - MChiodi.pdf` aparecerá automaticamente na categoria **IA**.
-- Um PDF em `/public/PDFs/Nodejs/Como Criar uma API com Node.js - MChiodi.pdf` será exibido em **Nodejs**.
-
----
-
-## 🧑‍💻 Como contribuir
-
-Quer contribuir com novos materiais? Siga os passos:
-
-1. Faça um **fork** do repositório.
-2. Adicione arquivos **.pdf** na subpasta apropriada dentro de `/public/PDFs/`.
-3. Mantenha o padrão de nome: `Categoria - Nome do Arquivo.pdf`
-4. Envie um **pull request**.
-
-Não é necessário modificar nenhum código — o sistema detecta os arquivos automaticamente!
+- A PDF inside `/public/PDFs/AI/AI Prompt Guide - MChiodi.pdf` will automatically appear under the **AI** category.
+- A file like `/public/PDFs/Nodejs/How to Build an API with Node.js - MChiodi.pdf` will be shown under **Nodejs**.
 
 ---
 
-## 📜 Regras para contribuição
+## 🧑‍💻 How to contribute
 
-- Os materiais devem estar em **formato PDF**.
-- Devem ser de livre distribuição ou autoria própria.
-- Nomeie os arquivos com clareza e mantenha a padronização.
+Want to contribute new materials? Follow these steps:
+
+1. **Fork** the repository.
+2. Add **.pdf** files in the appropriate subfolder within `/public/PDFs/`.
+3. Keep the naming format: `Category - File Name.pdf`
+4. Submit a **pull request**.
+
+There’s no need to change any code — the system detects the files automatically!
 
 ---
 
-## 🧠 Licença
+## 📜 Contribution guidelines
 
-Este repositório é mantido com foco na disseminação do conhecimento de forma aberta. Sempre verifique os direitos autorais do conteúdo que deseja compartilhar.
+- Files must be in **PDF format**.
+- They must be freely distributable or your own work.
+- Name files clearly and follow the naming convention.
 
 ---
 
-## 📲 Redes e contato
+## 🧠 License
 
-Me acompanhe em outras redes para mais conteúdos sobre programação e tecnologia:
+This repository is maintained with a focus on sharing knowledge openly. Always verify the copyright status of the content you wish to share.
 
-- 🌍 Portfólio: [https://matheuschiodi.github.io/Portfolio/](https://matheuschiodi.github.io/Portfolio/)
+---
+
+## 📲 Social & Contact
+
+Follow me for more content on programming and tech:
+
+- 🌍 Portfolio: [https://matheuschiodi.github.io/Portfolio/](https://matheuschiodi.github.io/Portfolio/)
 - 💼 LinkedIn: [https://www.linkedin.com/in/matheus-chiodi](https://www.linkedin.com/in/matheus-chiodi)
 - 🐙 GitHub: [https://github.com/MatheusChiodi](https://github.com/MatheusChiodi)
 - 📷 Instagram: [https://www.instagram.com/mchiodidev](https://www.instagram.com/mchiodidev)
@@ -89,4 +89,4 @@ Me acompanhe em outras redes para mais conteúdos sobre programação e tecnolog
 
 ---
 
-**Aproveite, aprenda e compartilhe com a comunidade!** 🚀
+**Enjoy, learn, and share with the community!** 🚀
