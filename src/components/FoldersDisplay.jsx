@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import * as LucideIcons from "lucide-react";
 import { FileText, Download } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useGitHubPDFs } from "../hooks/useGitHubPDFs";
+import { usePDFsFromLocal } from "../hooks/usePDFsFromLocal";
 
 export default function FoldersDisplay({ searchTerm = "" }) {
   const [activeFolderId, setActiveFolderId] = useState(null);
-  const folders = useGitHubPDFs();
+  const folders = usePDFsFromLocal();
 
   const handleToggle = (id) => {
     setActiveFolderId((prev) => (prev === id ? null : id));
